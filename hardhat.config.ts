@@ -9,11 +9,7 @@ import 'hardhat-gas-reporter';
 import 'solidity-coverage';
 import '@nomiclabs/hardhat-etherscan';
 import dotenv from 'dotenv';
-import fs from 'fs';
-
-if (fs.existsSync('./sdk/src/typechain')) {
-  import('./tasks');
-}
+import './tasks';
 
 dotenv.config();
 const privateKey = process.env.PRIVATE_KEY;

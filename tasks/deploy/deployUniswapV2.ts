@@ -1,7 +1,6 @@
 import '@nomiclabs/hardhat-ethers';
 import { task } from 'hardhat/config';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
-import { getImplementationAddress } from '@openzeppelin/upgrades-core';
 import { PayableOverrides } from 'ethers';
 import {
     EthersExecutionManager,
