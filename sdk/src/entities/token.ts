@@ -2,6 +2,7 @@ import invariant from 'tiny-invariant'
 import { ChainId } from '../constants'
 import { validateAndParseAddress } from '../utils'
 import { Currency } from './currency'
+import { DeploymentInfo } from '../config'
 
 /**
  * Represents an ERC20 token with a unique address and some metadata.
@@ -73,7 +74,7 @@ export const WETH = {
   ),
   [ChainId.RINKEBY]: new Token(
     ChainId.RINKEBY,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
+    DeploymentInfo[ChainId.RINKEBY].weth.proxyAddress,
     18,
     'WETH',
     'Wrapped Ether'

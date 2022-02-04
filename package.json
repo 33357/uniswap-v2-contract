@@ -6,7 +6,7 @@
   "author": "33357 <43600005+33357@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "hardhat typechain",
+    "build": "hardhat compile",
     "test": "hardhat test",
     "test:cov": "hardhat coverage",
     "localhost": "yarn run hardhat node --network hardhat --no-deploy --show-accounts",

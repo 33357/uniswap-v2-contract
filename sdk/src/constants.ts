@@ -22,7 +22,7 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = DeploymentInfo[4].factory.proxyAddress
+export const FACTORY_ADDRESS = DeploymentInfo[ChainId.RINKEBY].factory.proxyAddress
 
 export const INIT_CODE_HASH = '0x2bbf561059bfad76dd3e7f5e7e45d68e76db16d20d00dc76889202628a6417d9'
 
